@@ -1,4 +1,4 @@
-const $pizzaList = document.querySelector('#pizza-list');
+const $pizzaList = document.querySelector("#pizza-list");
 
 const printPizza = ({ _id, pizzaName, toppings, size, commentCount, createdBy, createdAt }) => {
     const pizzaCard = `
@@ -16,7 +16,7 @@ const printPizza = ({ _id, pizzaName, toppings, size, commentCount, createdBy, c
                             .map(topping => {
                                 return `<li>${topping}</li>`;
                             })
-                            .join('')}
+                            .join("")}
                     </ul>
                     <a class="btn display-block w-100 mt-auto" href="/pizza?id=${_id}">See the discussion.</a>
                 </div>
